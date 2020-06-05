@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>Contato | How I Met Your Mother</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+    <script src="js/jquery.devrama.slider-0.9.4.js"></script>
+    <script src="js/padrao.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/padrao.css">
+    <link rel="stylesheet" type="text/css" href="css/contato.css">
+    <link rel="icon" href="Imagens/icon.png" sizes="16x16">
+</head>
+<body style="background-image: url('Imagens/fundo.jpg');">
+
+    <div id="geral">
+        <header>
+            <div id="topo">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="Imagens/logo1.png">
+                        <span class="nome-logo">How i Met Your Mother</span>
+                    </a>
+                </div>
+                <nav id="menu">
+                    <div id="menuPrincipal">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="menu-item active"> Home </a>
+                        </li>
+                        <li>
+                            <a href="sobre.html" class="menu-item"> Sobre Nós </a>
+                        </li>
+                        <li>
+                            <a href="personagens.html" class="menu-item"> Personagens </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-item">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-item dropdown" id="navbarDropdownMenuLink" role="button">
+                                Produtos
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="contato.html" class="menu-item"> Contato </a>
+                        </li>
+                    </ul>
+                    </div>
+
+                    <div class="menuHamburguer">
+                        <img src="Imagens/menu.png">
+                    </div>
+                </nav>
+            </div>
+            <div class="panel" id="item-dropdown">
+                <a class="dropdown-item" href="quadros.html">Quadros</a><br>
+                <a class="dropdown-item" href="canecas.html">Canecas</a>
+            </div>
+            <div class="panel" id="panel">
+                <ul>
+                    <li class="item-toggle"><a href="index.html">Home</a></li>
+                    <li class="item-toggle"><a href="sobre.html">Sobre</a></li>
+                    <li class="item-toggle"><a href="personagens.html">Personagens</a></li>
+                    <li class="item-toggle dropdown">Produtos</li>
+                    <div class="item-dropdown">
+                        <ul>
+                            <li class="item-toggle"><a href="quadros.html">Quadros</a></li>
+                            <li class="item-toggle"><a href="canecas.html">Canecas</a></li>
+                        </ul>
+                    </div>
+                    <li class="item-toggle"><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+        </header>
+
+        <div id="conteudo">
+            <form>
+                <h1 class="titleForm text-warning">Entre em Contato</h1>
+                <div class="formGrid">
+                    <div class="itemFormGrid">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">   
+                    </div>
+                    <div class="itemFormGrid">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">   
+                    </div>
+                    <div class="itemFormGrid">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="telefone">   
+                    </div>
+                    <div class="itemFormGrid">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" name="assunto" id="assunto">   
+                    </div>
+                    <div class="itemFormGrid-Center">
+                        <label name="lblMensagem" for="mensagem">Mensagem</label>
+                        <textarea name="mensagem"></textarea>
+                        <input type="submit" class="button-card" value="ENVIAR">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div id="logo-jumbotrom">
+                <a href="index.html">
+                    <img src="Imagens/logo1.png">
+                    <span class="nome-logo">How i Met Your Mother</span>
+                </a>
+            </div>
+            <p id="titulo-jumbotrom">Muito obrigado pela sua visita</p>
+            <p id="texto-jumbotrom">Use nossos botões para navegar em nossas outras páginas.</p>
+            <div class="grid-jumbotrom">
+                <a href="index.html" class="jumbotrom-item button-card">Home</a>
+                <a href="sobre.html" class="jumbotrom-item  button-card">Sobre</a>
+                <a href="personagens.html" class="jumbotrom-item button-card">Personagens</a>
+                <a class="jumbotrom-item button-card">Galeria</a>
+                <a href="quadros.html" class="jumbotrom-item button-card">Quadros</a>
+                <a href="canecas.html" class="jumbotrom-item button-card">Canecas</a>
+                <a href="contato.html" class="jumbotrom-item button-card">Contato</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

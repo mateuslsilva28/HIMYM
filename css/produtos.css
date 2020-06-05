@@ -1,0 +1,64 @@
+.itemProduto {
+    width: 99%;
+    background-color: white;
+    margin: 10px 15px 10px 0;
+    display: grid
+}
+
+.itemProduto img{
+    width: 100%;
+}
+
+.saibaMais {
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+.infoProduto {
+    padding: 0 0 15px 10px;
+    margin: 0 30px 17px 30px;
+    border-bottom: 1px solid rgba(68, 66, 66, 0.1);
+}
+
+.infoProduto:last-child{
+    border: none;
+}
+
+.subTitle-Produto {
+    text-align: center;
+}
+
+.titleProduto {
+    font-size: 140%;
+    margin-bottom: -4px;
+}
+
+.linkProduto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnLinkProduto{
+    margin-bottom: 10px;
+}
+
+@media(min-width:768px){
+    .produtoGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:767px){
+    .produtoGrid {
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media (max-width:426px){
+    .btnLinkProduto {
+        font-size: 80%;
+    }
+}

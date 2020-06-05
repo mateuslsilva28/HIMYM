@@ -1,0 +1,241 @@
+body {
+    margin: 7px 15px 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#topo {
+    height: 70px;
+    margin: -13px  0 10px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#topo #logo {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#logo img {
+    height: 115%;
+}
+
+.nome-logo {
+    text-shadow: 1.2px 1.2px #000; margin-top: 10px;
+    color:  rgb(255, 193, 7);
+    font-family: cursive;
+    font-size: 130%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#menuHamburguer{
+    display: none;
+}
+
+.text-warning {
+    text-align:center;
+    text-shadow: 1.2px 1.2px #000;
+    color:  rgb(255, 193, 7);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    color:rgba(0,0,0,0.9)
+}
+
+.item-dropdown{
+    display: none;
+    margin-left:-30px;
+}
+
+.dropdown:after{
+    content: ' +';
+    color:  rgb(245, 245, 70);
+    font-weight: bold;
+    text-shadow:#000 1px -1px 2px, #000 -1px 1px 2px, #000 1px 1px 2px, #000 -1px -1px 2px
+}
+
+#item-dropdown {
+    float: right;
+    width: 100%;
+    background-color: #f8f9fa;
+    margin-top: -10px;
+    display: none;
+}
+
+.dropdown-item {
+    position: relative;
+    left: 86%;
+}
+
+
+a.dropdown-item {
+    text-decoration: none;
+    color: rgb(117, 115, 115);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 10px;
+}
+.activeDrop:after {
+    content: " -";
+    
+}
+
+.button-card{
+    background-color: rgb(255, 193, 7);
+    border: 1px solid #000;
+    border-radius: 4px;
+    width: 30%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1.2px 1.2px #fff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #e9ecef;
+    padding: 50px 8%;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo-jumbotrom {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer  span {
+    margin-top: -10px;
+}
+
+
+.grid-jumbotrom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    justify-content: center;
+}
+
+.jumbotrom-item {
+    width: auto;
+    margin: 5px;
+}
+
+#titulo-jumbotrom {
+    color: #212529;
+    font-size: 3.5rem;
+    margin: 10px 0 0px 0;
+}
+
+#texto-jumbotrom {
+    font-size: 1.25rem;
+}
+
+a { 
+    color: #000;
+    text-decoration: none;
+}
+
+/*Media para o Menu*/
+
+@media (min-width:992px){
+    #menu {
+        padding: 0 10px;
+    }
+    
+    li {
+        display: inline;
+    }
+    
+    
+    li a {
+        text-decoration: none;
+        color: rgb(117, 115, 115);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-right: 10px;
+    }
+    
+    a.active {
+        color: #000 !important;
+    }
+    
+    .dropdown-menu {
+        display: none;
+    }
+    
+    .menuHamburguer{
+        display: none;
+    }
+    
+    .item-toggle {
+        display: none;
+    }
+    
+}
+    
+@media (max-width:991px){
+
+    #menuPrincipal{
+        display: none;
+    }
+    .menuHamburguer{
+        display: block; 
+        cursor: pointer;
+        margin: 7px 5px 0 0;
+    }
+
+    .panel{
+        padding: 0;
+        background-color: #f8f9fa;
+        display: none;
+        overflow: hidden;
+        margin: -5px 0 5px 0;
+        text-align: left;  
+    }
+
+    .item-toggle{
+        list-style: none;
+        margin:0 0 25px -25px;
+        font-family: Helvetica, sans-serif;
+        color: #8e8f8f;
+        cursor: pointer;
+        display: none;
+    }
+
+    .dropdown:after{
+        content: ' +';
+        color:  rgb(245, 245, 70);
+        font-weight: bold;
+        text-shadow:#000 1px -1px 2px, #000 -1px 1px 2px, #000 1px 1px 2px, #000 -1px -1px 2px
+    }
+
+    .activeDrop:after {
+        content: " -";
+    }    
+}
+    
+/*Media para o Jumbotrom*/
+@media (max-width:869px){
+    #titulo-jumbotrom {
+        text-align: center;
+    }
+}
+
+/*Media para os Cards - Grid*/
+@media (max-width:769px){
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr)
+    }
+}

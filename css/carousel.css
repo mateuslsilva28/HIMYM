@@ -1,0 +1,83 @@
+.devrama-slider .button-slider{
+    padding: 0.4em 0.8em;
+    border-radius: 0.4em;
+    text-decoration: none;
+    line-height: 1.2em;
+    cursor: pointer;
+}
+
+.devrama-slider .button-previous {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+.devrama-slider .button-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+.devrama-slider .navigation {
+    position: absolute;
+    bottom: 13px;
+    left: 46%;
+    border-radius: #000
+}
+.devrama-slider .navigation .inner .nav-link {
+    background-color: transparent;
+    color:transparent;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #000000;
+}
+.devrama-slider .navigation .inner .nav-link:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+.devrama-slider .navigation .inner .nav-link.active {
+    background-color: #FFF;
+}
+
+.textoAnimate {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+@media(min-width:851px){
+    .textoSlide2 {
+        color: #fff;
+        font-size: 230%;
+        text-align: center;
+    }
+}
+
+@media (max-width:850px){
+    .textoSlide2 {
+        color: #fff;
+        font-size: 160%;
+        text-align: center;
+    }
+}
+
+@media (min-width:741px){
+    .textoSlide1 {
+        color: #FFF;
+        font-size: 270%;
+    }
+
+}
+
+@media (min-width:631px) and (max-width:740px){
+    .textoSlide1 {
+        color: #fff;
+        font-size: 210%;
+    }
+}
+
+@media(max-width:630px){
+    .textoSlide1 {
+        display: none;
+        font-size: 0;
+    }
+}

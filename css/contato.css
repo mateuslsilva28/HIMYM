@@ -1,0 +1,64 @@
+form {
+    background-color: rgb(255,255,255);
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.titleForm {
+    margin: 10px 0 40px 0;
+}
+
+input, textarea {
+    display: block;
+    border-radius: 10px 20px;
+}
+
+[type=text]{
+    width: 95%;
+    height: 35px;
+    margin: 15px 0 30px 0;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+[name=lblMensagem]{
+    text-align: center;
+}
+
+.itemFormGrid-Center {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 25%;
+}
+
+textarea {
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 0%;
+}
+
+[type=submit]{
+    margin: 15px 0;
+    position: relative;
+    left:37%;
+}
+
+@media (max-width:650px){
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+    input, textarea {
+        width: 100%;
+    }
+    .itemFormGrid-Center {
+        left: 0%;
+        padding-right: 35px;
+    }
+    textarea {width: 100%}
+}
